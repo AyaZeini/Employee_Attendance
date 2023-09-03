@@ -614,12 +614,12 @@ if selected=="Manager":
                 selected_id = st.sidebar.selectbox("Select Employee ID", unique_ids)     # Sidebar widget for selecting an employee ID
                 selected_day_name = st.sidebar.selectbox("Select Day of Week", list(day_name_to_number.keys()))  # Sidebar widget for selecting the day of the week
                 selected_day_number = day_name_to_number[selected_day_name]  # Get the corresponding number
-                targeted_productivity = st.sidebar.number_input("Targeted Productivity", min_value=0.0, max_value=1.0, step=0.01)
-                smv = st.sidebar.number_input("Standard Minute Value", min_value=0.0)
-                wip = st.sidebar.number_input("Work In Progress", min_value=0)
-                over_time = st.sidebar.number_input("Overtime", min_value=0)
-                incentive = st.sidebar.number_input("Incentive", min_value=0)
-                idle_time = st.sidebar.number_input("Productivity Interruption", min_value=0)
+                targeted_productivity = st.sidebar.number_input("targeted_productivity", min_value=0.0, max_value=1.0, step=0.01)
+                smv = st.sidebar.number_input("smv", min_value=0.0)
+                wip = st.sidebar.number_input("wip", min_value=0)
+                over_time = st.sidebar.number_input("over_time", min_value=0)
+                incentive = st.sidebar.number_input("incentive", min_value=0)
+                idle_time = st.sidebar.number_input("idle_time", min_value=0)
 
                 # Prepare user input data as a DataFrame
                 user_input = pd.DataFrame({
