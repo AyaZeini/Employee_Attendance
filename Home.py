@@ -643,7 +643,7 @@ if selected=="Manager":
                         # Round the prediction to 2 decimal places
                         rounded_prediction = round(prediction[0], 3)
                         # Check if predicted productivity is greater than or equal to the target productivity
-                        if rounded_prediction >= user_input['Targeted Productivity'].values[0]:
+                        if rounded_prediction >= user_input['targeted_productivity'].values[0]:
                             # If so, give a positive message
                             message = " Great news! 🌟 You're expected to exceed your target productivity at:"
                         else:
