@@ -624,12 +624,12 @@ if selected=="Manager":
                 # Prepare user input data as a DataFrame
                 user_input = pd.DataFrame({
                     'ID': [selected_id],
-                    'Targeted Productivity': [targeted_productivity],
-                    'Standard Minute Value': [smv],
-                    'Work In Progress': [wip],
-                    'Overtime': [over_time],
-                    'Incentive': [incentive],
-                    'Productivity Interruption': [idle_time],
+                    'targeted_productivity': [targeted_productivity],
+                    'smv': [smv],
+                    'wip': [wip],
+                    'over_time': [over_time],
+                    'incentive': [incentive],
+                    'idle_time': [idle_time],
                     'Day of Week': [selected_day_number]
                 })
 
