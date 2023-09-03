@@ -6,3 +6,4 @@ Requests==2.31.0
 streamlit==1.25.0
 streamlit_lottie==0.0.5
 streamlit_option_menu==0.3.2
+scikit-learn>=0.18
